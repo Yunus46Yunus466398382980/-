@@ -1,0 +1,178 @@
+*{ 
+    list-style: none;
+    text-decoration: none;
+    font-family: Poppins
+}
+
+
+.dropdown {
+    position: relative;
+    display: flex;
+  }
+  .dropdown-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .dropdown::after {
+    content: '▾';
+    font-size: 16px;
+    margin-left: 5px;
+    transition: transform 0.3s;
+    display: inline-block;
+  }
+  .dropdown:hover::after {
+    transform: rotate(180deg);
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background-color: #1b1b2f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    min-width: 150px;
+    z-index: 1;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .dropdown:active .dropdown-content {
+    display: flex;
+  }
+  .dropdown-content button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition:  0.3s;
+  }
+  .dropdown-content button:hover {
+    background-color: #c2a8f9;
+    color: black;
+  }
+
+.vxod{
+    width: 175px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #BFAFF2;
+    border: 1px solid #BFAFF2;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+}
+
+.h2{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;    
+}
+
+.nav__left{
+    display: flex;
+    gap: 29px;
+}
+
+.nav__right{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+h2{
+    color: white;
+}
+
+body{
+    background-color: #0C0D1A;
+}
+
+.p{
+    width: 293px;
+    height: 102px;
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+        
+}
+
+.card__text{
+    width: 325px;
+    height: 240px;
+    border-radius: 32px;
+    background-color: #232028;
+    color: white;
+    padding: 59px 16px 33px;
+}
+
+h2{
+    font-family: Outfit;
+font-weight: 400;
+font-size: 32px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+.card{
+    margin-top: 137px;
+}
+
+.Logo__gojo{
+    margin-bottom: -50px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0a0a1a;
+    border-top: 1px solid #333;
+    margin-top: 125px;
+  }
+
+  .socials a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .socials a:hover {
+    text-decoration: underline;
+  }
